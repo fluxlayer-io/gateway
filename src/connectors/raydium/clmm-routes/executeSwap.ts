@@ -112,7 +112,7 @@ async function executeSwap(
         poolInfo,
         poolKeys,
         outputMint: outputToken.address,
-        amountInMax: new BN(Math.floor(amountInWithSlippage)),
+        amountInMax: new BN(Math.floor(amountInWithSlippage)), 
         amountOut: exactOutResponse.realAmountOut.amount,
         observationId: clmmPoolInfo.observationId,
         ownerInfo: {

@@ -184,9 +184,7 @@ async function formatSwapQuote(
     const estimatedAmountOut = exactOutResponse.realAmountOut.amount.toNumber() / 10 ** outputToken.decimals;
     const estimatedAmountIn = convertAmountIn(amount, inputToken.decimals, outputToken.decimals, exactOutResponse.amountIn.amount);
     const maxAmountIn = convertAmountIn(amount, inputToken.decimals, outputToken.decimals, exactOutResponse.maxAmountIn.amount);
-
     const price = estimatedAmountIn / estimatedAmountOut;
-
     return {
       poolAddress,
       estimatedAmountIn,
