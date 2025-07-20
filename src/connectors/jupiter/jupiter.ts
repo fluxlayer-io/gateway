@@ -134,7 +134,7 @@ export class Jupiter {
       swapMode: swapMode,
       onlyDirectRoutes: onlyDirectRoutes.toString(),
       asLegacyTransaction: asLegacyTransaction.toString(),
-      restrictIntermediateTokens: 'false',
+      restrictIntermediateTokens: 'true',
     });
 
     // Only add maxAccounts for ExactIn mode (not supported for ExactOut)
